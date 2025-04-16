@@ -1,0 +1,55 @@
+body 
+{
+    background-color: #000000;
+    color: red;
+    font-family:'Courier New', Courier, monospace;
+}
+
+section
+{
+    padding: 20px;
+    margin: 30px;
+}
+
+#About
+{
+    text-align: center;
+    font-weight: lighter;
+}
+
+h1
+{
+    text-align: center;
+    font-size: 50px;
+}
+
+h2
+{
+    font-size: 30px;
+    color: grey;
+}
+
+#Experience
+{
+    border: 10px solid orange;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+ul
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#Connect
+{
+    border: 10px solid orange;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+#Connect a
+{
+    color:purple;
+    font-weight: bold;
+}
