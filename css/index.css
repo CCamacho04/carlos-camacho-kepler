@@ -5,6 +5,11 @@ body
     font-family:'Courier New', Courier, monospace;
 }
 
+nav a
+{
+    color:red;
+}
+
 section
 {
     padding: 20px;
@@ -13,6 +18,7 @@ section
 
 #About
 {
+    border: 10px solid orange;
     text-align: center;
     font-weight: lighter;
 }
@@ -36,16 +42,44 @@ h2
     font-weight: lighter;
 }
 
-ul
+.job-row, .volunteer-row
 {
-    font-weight: bold;
-    text-decoration: underline;
+    margin-top: 10px;
 }
+
+.job-header, .volunteer-header
+{
+    display: flex;
+}
+
+.job-title, .volunteer-title
+{
+    font-style: italic;
+}
+
+.job-date
+{
+    display:flex;
+    margin-left: 1550px;
+}
+
+.volunteer-date
+{
+    display: flex;
+    margin-left: 1410px;
+}
+
 #Connect
 {
     border: 10px solid orange;
     padding: 10px;
     font-weight: lighter;
+}
+
+.connect-links
+{
+    display: flex;
+    gap: 20px;
 }
 
 #Connect a
