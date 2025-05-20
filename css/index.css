@@ -35,7 +35,7 @@ h2
     color: grey;
 }
 
-#Experience, #Connect, #Skills, #Projects
+#Experience, #Connect, #Skills, #Projects, #leave-message, #messages
 {
     border: 10px solid orange;
     padding: 10px;
@@ -89,6 +89,42 @@ h2
     font-weight: bold;
 }
 
+#leave-message form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#leave-message input, #leave-message textarea
+{
+    padding: 10px;
+    font-size: 16px;
+}
+
+#leave-message label
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#leave-message button
+{
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer
+}
+
+#leave-message button:hover
+{
+    background-color: darkred;
+}
+
 /* Tablet Styles */
 @media (min-width: 768px)
 {
@@ -115,6 +151,16 @@ h2
         font-size: 20px;
         grid-template-columns: repeat(2, max-content);
     }
+
+    #leave-message input, #leave-message textarea
+    {
+        font-size: 18px;
+    }
+
+    #leave-message button
+    {
+        font-size: 18px;
+    }
 }
 
 /* Desktop Styles */
@@ -129,7 +175,7 @@ h2
     #Skills li
     {
         margin-left: 15px;
-        background-color: purple;
+        background-color: lightcyan;
         padding: 10px;
     }
 
@@ -143,5 +189,15 @@ h2
     {
         font-size: 30px;
         grid-template-columns: repeat(2, max-content);
+    }
+
+    #leave-message input, #leave-message textarea
+    {
+        font-size: 20px;
+    }
+
+    #leave-message button
+    {
+        font-size: 20px;
     }
 }
