@@ -76,6 +76,33 @@ h2
     background-color: white;
 }
 
+#Projects ul
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+#Projects li
+{
+    background-color: grey;
+    padding: 10px 15px;
+    border: 2px solid red;
+    border-radius: 5px;
+}
+
+#Projects li a
+{
+    color: black;
+    text-decoration: none;
+}
+
+#Projects a:hover
+{
+    text-decoration: underline;
+}
+
 .connect-links
 {
     display: grid;
