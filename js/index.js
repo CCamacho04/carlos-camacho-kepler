@@ -86,3 +86,39 @@ messageForm.addEventListener("submit", function(event)
 
     messageForm.reset();
 });
+
+fetch("https://api.github.com/users/CCamacho04/repos")
+    .then(response => {
+        if (!response.ok)
+        {
+            throw new Error(`GitHub API Error! Status: ${response.status}`);
+        }
+
+        return response.json();
+    })
+    .then(repositories => {
+        console.log("GitHub Repositories:", repositories);
+
+        const projectSection = document.getElementById("Projects");
+        const projectList = projectSection.querySelector("ul");
+
+        for (let i = 0; i < repositories.length; i++)
+        {
+            const project = document.createElement("li");
+            const link = document.createElement("a");
+            link.href = repositories[i].html_url;
+            link.innerText = repositories[i].name;
+            link.target = "_blank";
+            
+            project.appendChild(link);
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error => {
+        console.error("Error fetching repositories:", error);
+        const projectSection = document.getElementById("Projects");
+        const projectList = projectSection.querySelector("ul");
+        const errorMessage = document.createElement("li");
+        errorMessage.innerText = "Could not fetch GitHub repositories.";
+        projectList.appendChild(errorMessage);
+    })
