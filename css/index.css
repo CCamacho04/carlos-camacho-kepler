@@ -74,6 +74,7 @@ h2
 #Skills li
 {
     background-color: white;
+    max-width: 200px;
 }
 
 #Projects ul
@@ -164,7 +165,7 @@ h2
     #Skills li
     {
         margin-left: 10px;
-        background-color: blue;
+        background-color: lightblue;
     }
 
     h1
