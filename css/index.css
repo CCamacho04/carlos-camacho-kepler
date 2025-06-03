@@ -7,7 +7,7 @@ body
 
 nav a
 {
-    color:red;
+    color: red;
 }
 
 section
@@ -87,10 +87,11 @@ h2
 
 #Projects li
 {
-    background-color: grey;
+    background-color: lightgrey;
     padding: 10px 15px;
     border: 2px solid red;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 #Projects li a
@@ -99,7 +100,7 @@ h2
     text-decoration: none;
 }
 
-#Projects a:hover
+#Projects a: hover
 {
     text-decoration: underline;
 }
@@ -113,7 +114,7 @@ h2
 
 #Connect a
 {
-    color:purple;
+    color: lightgoldenrodyellow;
     font-weight: bold;
 }
 
@@ -148,7 +149,7 @@ h2
     cursor: pointer
 }
 
-#leave-message button:hover
+#leave-message button: hover
 {
     background-color: darkred;
 }
