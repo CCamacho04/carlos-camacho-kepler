@@ -7,7 +7,7 @@ body
 
 nav a
 {
-    color:red;
+    color: red;
 }
 
 section
@@ -74,6 +74,7 @@ h2
 #Skills li
 {
     background-color: white;
+    max-width: 200px;
 }
 
 #Projects ul
@@ -86,10 +87,11 @@ h2
 
 #Projects li
 {
-    background-color: grey;
+    background-color: lightgrey;
     padding: 10px 15px;
     border: 2px solid red;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 #Projects li a
@@ -98,7 +100,7 @@ h2
     text-decoration: none;
 }
 
-#Projects a:hover
+#Projects a: hover
 {
     text-decoration: underline;
 }
@@ -112,7 +114,7 @@ h2
 
 #Connect a
 {
-    color:purple;
+    color: lightgoldenrodyellow;
     font-weight: bold;
 }
 
@@ -147,7 +149,7 @@ h2
     cursor: pointer
 }
 
-#leave-message button:hover
+#leave-message button: hover
 {
     background-color: darkred;
 }
@@ -164,7 +166,7 @@ h2
     #Skills li
     {
         margin-left: 10px;
-        background-color: blue;
+        background-color: lightblue;
     }
 
     h1
